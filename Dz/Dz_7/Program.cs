@@ -1,0 +1,15 @@
+﻿using Dz_7;
+using Class_Library;
+using System.Drawing;
+ComplexNumber a = new ComplexNumber(3, 4);
+ComplexNumber b = new ComplexNumber(1, 2);
+Console.WriteLine($"Sum: {a + b}");
+Console.WriteLine($"Difference: {a - b}");
+Console.WriteLine($"Product: {a * b}");
+Console.WriteLine($"/ operation: {a / b}");
+Circle circle = new Circle(5);
+Class_Library.Rectangle rectangle = new Class_Library.Rectangle(4, 6);
+Triangle triangle = new Triangle(3, 4, 5);
+Console.WriteLine(circle.ToString());
+Console.WriteLine(rectangle.ToString());
+Console.WriteLine(triangle.ToString());
