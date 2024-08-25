@@ -1,6 +1,5 @@
 ﻿using Dz_7;
 using Class_Library;
-using System.Drawing;
 ComplexNumber a = new ComplexNumber(3, 4);
 ComplexNumber b = new ComplexNumber(1, 2);
 Console.WriteLine($"Sum: {a + b}");
