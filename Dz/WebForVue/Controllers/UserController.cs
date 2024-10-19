@@ -37,5 +37,19 @@ namespace WebForVue
             users.Add(user);
             return CreatedAtAction(nameof(GetUser), new { id = user.Id }, user);
         }
+        [HttpDelete("{id}")]
+        public ActionResult DeleteUser(int id)
+        {
+
+            var user = users.FirstOrDefault(u => u.Id == id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            users.Remove(user);
+            return NoContent();
+
+        }
     }
 }
