@@ -1,0 +1,6 @@
+@WebForVue_HostAddress = http://localhost:5268
+
+GET {{WebForVue_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
